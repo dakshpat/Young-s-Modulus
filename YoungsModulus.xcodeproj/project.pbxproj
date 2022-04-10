@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1C88D1E28036516006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D1D28036516006971CA /* Aluminium.csv */; };
+		B1C88D1F28036516006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D1D28036516006971CA /* Aluminium.csv */; };
+		B1C88D2128036552006971CA /* DataFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D2028036552006971CA /* DataFactory .swift */; };
+		B1C88D2228036552006971CA /* DataFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D2028036552006971CA /* DataFactory .swift */; };
+		B1C88D2428038213006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2328038213006971CA /* Copper706.csv */; };
+		B1C88D2528038213006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2328038213006971CA /* Copper706.csv */; };
 		D2384D8525BFC5D30082D98A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D8425BFC5D30082D98A /* Tests_iOS.swift */; };
 		D2384D9025BFC5D30082D98A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D8F25BFC5D30082D98A /* Tests_macOS.swift */; };
-		D2384D9225BFC5D30082D98A /* Test_PlotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */; };
-		D2384D9325BFC5D30082D98A /* Test_PlotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */; };
+		D2384D9225BFC5D30082D98A /* YoungsModulus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6925BFC5D20082D98A /* YoungsModulus.swift */; };
+		D2384D9325BFC5D30082D98A /* YoungsModulus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6925BFC5D20082D98A /* YoungsModulus.swift */; };
 		D2384D9425BFC5D30082D98A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6A25BFC5D20082D98A /* ContentView.swift */; };
 		D2384D9525BFC5D30082D98A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6A25BFC5D20082D98A /* ContentView.swift */; };
 		D2384D9625BFC5D30082D98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2384D6B25BFC5D30082D98A /* Assets.xcassets */; };
@@ -27,10 +33,6 @@
 		D2384DC125BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
 		D2384DC225BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
 		D2384DC325BFC5E60082D98A /* PlotDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */; };
-		D2384DC425BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
-		D2384DC525BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
-		D2384DC625BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
-		D2384DC725BFC5E60082D98A /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */; };
 		D2384DC825BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
 		D2384DC925BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
 		D2384DCA25BFC5E60082D98A /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384DAF25BFC5E60082D98A /* operators.swift */; };
@@ -71,12 +73,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PlotApp.swift; sourceTree = "<group>"; };
+		B1C88D1D28036516006971CA /* Aluminium.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aluminium.csv; sourceTree = "<group>"; };
+		B1C88D2028036552006971CA /* DataFactory .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFactory .swift"; sourceTree = "<group>"; };
+		B1C88D2328038213006971CA /* Copper706.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copper706.csv; sourceTree = "<group>"; };
+		D2384D6925BFC5D20082D98A /* YoungsModulus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungsModulus.swift; sourceTree = "<group>"; };
 		D2384D6A25BFC5D20082D98A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2384D6B25BFC5D30082D98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot Threaded.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2384D7025BFC5D30082D98A /* YoungsModulus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoungsModulus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2384D7325BFC5D30082D98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Plot Threaded.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2384D7825BFC5D30082D98A /* YoungsModulus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoungsModulus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2384D7A25BFC5D30082D98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2384D7B25BFC5D30082D98A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D2384D8025BFC5D30082D98A /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +93,6 @@
 		D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
 		D2384DAB25BFC5E60082D98A /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
 		D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataClass.swift; sourceTree = "<group>"; };
-		D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExportDocument.swift; sourceTree = "<group>"; };
 		D2384DAF25BFC5E60082D98A /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
 		D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
 		D2384DB125BFC5E60082D98A /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -147,17 +151,19 @@
 		D2384D6825BFC5D20082D98A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D2384D6925BFC5D20082D98A /* Test_PlotApp.swift */,
+				D2384D6925BFC5D20082D98A /* YoungsModulus.swift */,
 				D2384D6A25BFC5D20082D98A /* ContentView.swift */,
+				D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */,
 				D2384DFE25BFE4390082D98A /* PlotClass.swift */,
-				D2384D6B25BFC5D30082D98A /* Assets.xcassets */,
 				D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */,
 				D2384DAB25BFC5E60082D98A /* CorePlot.swift */,
 				D2384DAD25BFC5E60082D98A /* PlotDataClass.swift */,
-				D2384DAE25BFC5E60082D98A /* TextExportDocument.swift */,
 				D2384DAF25BFC5E60082D98A /* operators.swift */,
-				D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */,
 				D2384DB125BFC5E60082D98A /* TextView.swift */,
+				B1C88D2028036552006971CA /* DataFactory .swift */,
+				B1C88D1D28036516006971CA /* Aluminium.csv */,
+				B1C88D2328038213006971CA /* Copper706.csv */,
+				D2384D6B25BFC5D30082D98A /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -165,8 +171,8 @@
 		D2384D7125BFC5D30082D98A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */,
-				D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */,
+				D2384D7025BFC5D30082D98A /* YoungsModulus.app */,
+				D2384D7825BFC5D30082D98A /* YoungsModulus.app */,
 				D2384D8025BFC5D30082D98A /* Tests iOS.xctest */,
 				D2384D8B25BFC5D30082D98A /* Tests macOS.xctest */,
 			);
@@ -218,9 +224,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */ = {
+		D2384D6F25BFC5D30082D98A /* YoungsModulus (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (iOS)" */;
+			buildConfigurationList = D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "YoungsModulus (iOS)" */;
 			buildPhases = (
 				D2384D6C25BFC5D30082D98A /* Sources */,
 				D2384D6D25BFC5D30082D98A /* Frameworks */,
@@ -230,17 +236,17 @@
 			);
 			dependencies = (
 			);
-			name = "Test Plot Threaded (iOS)";
+			name = "YoungsModulus (iOS)";
 			packageProductDependencies = (
 				D2384DF425BFC6E20082D98A /* CorePlot */,
 			);
 			productName = "Test Plot (iOS)";
-			productReference = D2384D7025BFC5D30082D98A /* Test Plot Threaded.app */;
+			productReference = D2384D7025BFC5D30082D98A /* YoungsModulus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */ = {
+		D2384D7725BFC5D30082D98A /* YoungsModulus (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (macOS)" */;
+			buildConfigurationList = D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "YoungsModulus (macOS)" */;
 			buildPhases = (
 				D2384D7425BFC5D30082D98A /* Sources */,
 				D2384D7525BFC5D30082D98A /* Frameworks */,
@@ -250,12 +256,12 @@
 			);
 			dependencies = (
 			);
-			name = "Test Plot Threaded (macOS)";
+			name = "YoungsModulus (macOS)";
 			packageProductDependencies = (
 				D2384DED25BFC6CB0082D98A /* CorePlot */,
 			);
 			productName = "Test Plot (macOS)";
-			productReference = D2384D7825BFC5D30082D98A /* Test Plot Threaded.app */;
+			productReference = D2384D7825BFC5D30082D98A /* YoungsModulus.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2384D7F25BFC5D30082D98A /* Tests iOS */ = {
@@ -325,7 +331,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot Threaded" */;
+			buildConfigurationList = D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "YoungsModulus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -341,8 +347,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */,
-				D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */,
+				D2384D6F25BFC5D30082D98A /* YoungsModulus (iOS) */,
+				D2384D7725BFC5D30082D98A /* YoungsModulus (macOS) */,
 				D2384D7F25BFC5D30082D98A /* Tests iOS */,
 				D2384D8A25BFC5D30082D98A /* Tests macOS */,
 			);
@@ -354,7 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C88D1E28036516006971CA /* Aluminium.csv in Resources */,
 				D2384D9625BFC5D30082D98A /* Assets.xcassets in Resources */,
+				B1C88D2428038213006971CA /* Copper706.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +370,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C88D1F28036516006971CA /* Aluminium.csv in Resources */,
 				D2384D9725BFC5D30082D98A /* Assets.xcassets in Resources */,
+				B1C88D2528038213006971CA /* Copper706.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,11 +400,11 @@
 				D2384D9425BFC5D30082D98A /* ContentView.swift in Sources */,
 				D2384DCC25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
 				D2384DC825BFC5E60082D98A /* operators.swift in Sources */,
-				D2384DC425BFC5E60082D98A /* TextExportDocument.swift in Sources */,
 				D2384DC025BFC5E60082D98A /* PlotDataClass.swift in Sources */,
 				D2384DB825BFC5E60082D98A /* CorePlot.swift in Sources */,
-				D2384D9225BFC5D30082D98A /* Test_PlotApp.swift in Sources */,
+				D2384D9225BFC5D30082D98A /* YoungsModulus.swift in Sources */,
 				D2384DB425BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				B1C88D2128036552006971CA /* DataFactory .swift in Sources */,
 				D2384DD025BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384DFF25BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
@@ -407,11 +417,11 @@
 				D2384D9525BFC5D30082D98A /* ContentView.swift in Sources */,
 				D2384DCD25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
 				D2384DC925BFC5E60082D98A /* operators.swift in Sources */,
-				D2384DC525BFC5E60082D98A /* TextExportDocument.swift in Sources */,
 				D2384DC125BFC5E60082D98A /* PlotDataClass.swift in Sources */,
 				D2384DB925BFC5E60082D98A /* CorePlot.swift in Sources */,
-				D2384D9325BFC5D30082D98A /* Test_PlotApp.swift in Sources */,
+				D2384D9325BFC5D30082D98A /* YoungsModulus.swift in Sources */,
 				D2384DB525BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				B1C88D2228036552006971CA /* DataFactory .swift in Sources */,
 				D2384DD125BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384E0025BFE4390082D98A /* PlotClass.swift in Sources */,
 			);
@@ -426,7 +436,6 @@
 				D2384DCA25BFC5E60082D98A /* operators.swift in Sources */,
 				D2384D8525BFC5D30082D98A /* Tests_iOS.swift in Sources */,
 				D2384DC225BFC5E60082D98A /* PlotDataClass.swift in Sources */,
-				D2384DC625BFC5E60082D98A /* TextExportDocument.swift in Sources */,
 				D2384DD225BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384DB625BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
 				D2384E0125BFE4390082D98A /* PlotClass.swift in Sources */,
@@ -442,7 +451,6 @@
 				D2384DCB25BFC5E60082D98A /* operators.swift in Sources */,
 				D2384D9025BFC5D30082D98A /* Tests_macOS.swift in Sources */,
 				D2384DC325BFC5E60082D98A /* PlotDataClass.swift in Sources */,
-				D2384DC725BFC5E60082D98A /* TextExportDocument.swift in Sources */,
 				D2384DD325BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384DB725BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
 				D2384E0225BFE4390082D98A /* PlotClass.swift in Sources */,
@@ -454,12 +462,12 @@
 /* Begin PBXTargetDependency section */
 		D2384D8225BFC5D30082D98A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2384D6F25BFC5D30082D98A /* Test Plot Threaded (iOS) */;
+			target = D2384D6F25BFC5D30082D98A /* YoungsModulus (iOS) */;
 			targetProxy = D2384D8125BFC5D30082D98A /* PBXContainerItemProxy */;
 		};
 		D2384D8D25BFC5D30082D98A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2384D7725BFC5D30082D98A /* Test Plot Threaded (macOS) */;
+			target = D2384D7725BFC5D30082D98A /* YoungsModulus (macOS) */;
 			targetProxy = D2384D8C25BFC5D30082D98A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -582,7 +590,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -590,8 +598,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot Threaded";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Plot";
+				PRODUCT_NAME = YoungsModulus;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,7 +612,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -612,8 +620,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot Threaded";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Plot";
+				PRODUCT_NAME = YoungsModulus;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -629,7 +637,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -638,8 +646,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot Threaded";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Plot";
+				PRODUCT_NAME = YoungsModulus;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -653,7 +661,7 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = V59RVGUYZD;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -662,8 +670,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jiIIT.Test-Plot";
-				PRODUCT_NAME = "Test Plot Threaded";
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-Plot";
+				PRODUCT_NAME = YoungsModulus;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -761,7 +769,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "Test Plot Threaded" */ = {
+		D2384D6725BFC5D20082D98A /* Build configuration list for PBXProject "YoungsModulus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9825BFC5D30082D98A /* Debug */,
@@ -770,7 +778,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (iOS)" */ = {
+		D2384D9A25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "YoungsModulus (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9B25BFC5D30082D98A /* Debug */,
@@ -779,7 +787,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "Test Plot Threaded (macOS)" */ = {
+		D2384D9D25BFC5D30082D98A /* Build configuration list for PBXNativeTarget "YoungsModulus (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2384D9E25BFC5D30082D98A /* Debug */,

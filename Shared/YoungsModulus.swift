@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Test_PlotApp: App {
+struct YoungsModulus: App {
     
     @StateObject var plotData = PlotClass()
     

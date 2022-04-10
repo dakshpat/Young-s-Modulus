@@ -31,26 +31,7 @@ struct ContentView: View {
                 .padding()
             
             Divider()
-            /*
-                     CorePlot(dataForPlot: $plotData.plotArray[0].plotData, changingPlotParameters: $plotData.plotArray[0].changingPlotParameters)
-                         .setPlotPadding(left: 10)
-                         .setPlotPadding(right: 10)
-                         .setPlotPadding(top: 10)
-                         .setPlotPadding(bottom: 10)
-                         .padding()
-                     
-                     Divider()
-                     */
-   /*
-            CorePlot(dataForPlot: $plotData.plotArray[1].plotData, changingPlotParameters: $plotData.plotArray[1].changingPlotParameters)
-                .setPlotPadding(left: 10)
-                .setPlotPadding(right: 10)
-                .setPlotPadding(top: 10)
-                .setPlotPadding(bottom: 10)
-                .padding()
-            
-            Divider()
-            */
+
             HStack{
                 
                 HStack(alignment: .center) {
@@ -130,13 +111,7 @@ struct ContentView: View {
             
             let _ = await withTaskGroup(of:  Void.self) { taskGroup in
 
-
-
                 taskGroup.addTask {
-
-        
-        var temp = 0.0
-        
         
         
         //Calculate the new plotting data and place in the plotDataModel
@@ -150,7 +125,6 @@ struct ContentView: View {
                 
             }
             
-  //      }
         
         
     }
@@ -165,8 +139,6 @@ struct ContentView: View {
         
         setupPlotDataModel(selector: 1)
         
-     //   Task{
-            
             
             let _ = await withTaskGroup(of:  Void.self) { taskGroup in
 
@@ -174,30 +146,21 @@ struct ContentView: View {
 
                 taskGroup.addTask {
 
-        
-        var temp = 0.0
-        
-        
-        
         //Calculate the new plotting data and place in the plotDataModel
         await calculator.plotYEqualsX()
                   
-                    // This forces a SwiftUI update. Force a SwiftUI update.
+        // This forces a SwiftUI update. Force a SwiftUI update.
         await self.plotData.objectWillChange.send()
                     
                 }
                 
             }
-            
-    //    }
-        
-        
-
     }
     
-
-   
     
+    
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
