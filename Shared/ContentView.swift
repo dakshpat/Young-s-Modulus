@@ -13,7 +13,13 @@ typealias plotDataType = [CPTScatterPlotField : Double]
 struct ContentView: View {
     @EnvironmentObject var plotData :PlotClass
     
-    @ObservedObject private var calculator = CalculatePlotData()
+    @ObservedObject var youngsMod = youngsModulus()
+    @StateObject var calculator = CalculatePlotData()
+    var data = loadCSV(from: "Aluminium")
+    var data2 = loadCSV(from: "Copper706")
+    
+    @State var E = 0.0
+    
     @State var isChecked:Bool = false
     @State var tempInput = ""
     
@@ -31,28 +37,11 @@ struct ContentView: View {
                 .padding()
             
             Divider()
+            
+        HStack{
 
-            HStack{
-                
-                HStack(alignment: .center) {
-                    Text("temp:")
-                        .font(.callout)
-                        .bold()
-                    TextField("temp", text: $tempInput)
-                        .padding()
-                }.padding()
-                
-                Toggle(isOn: $isChecked) {
-                            Text("Display Error")
-                        }
-                .padding()
-                
-                
-            }
-            
-            
-            HStack{
-                Button("exp(-x)", action: {
+            VStack{
+                Button("Aluminium", action: {
                     
                     Task.init{
                     
@@ -60,32 +49,31 @@ struct ContentView: View {
                     await self.calculate()
                     }
                     
-                    
-                    
                 }
-                
-                
                 )
-                .padding()
+        
                 
-            }
-            
-            HStack{
-                Button("x", action: { Task.init{
+                Button("Copper", action: { Task.init{
                     
                     self.selector = 1
                     
                     await self.calculate2()
                     
                     
+                    }
                 }
-                }
-                
-                
                 )
                 .padding()
-                
             }
+            
+            VStack{
+                Text("Youngs's Modulus(GPa): \(E, specifier: "%.3f")")
+            }
+            
+            }
+  
+            
+            
             
         }
         
@@ -109,23 +97,22 @@ struct ContentView: View {
      //   Task{
             
             
-            let _ = await withTaskGroup(of:  Void.self) { taskGroup in
+        let _ = await withTaskGroup(of:  Void.self) { taskGroup in
 
                 taskGroup.addTask {
         
         
         //Calculate the new plotting data and place in the plotDataModel
-        await calculator.ploteToTheMinusX()
+        await calculator.plotAluminium()
         
                     // This forces a SwiftUI update. Force a SwiftUI update.
         await self.plotData.objectWillChange.send()
                     
                 }
 
-                
             }
-            
         
+        E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
         
     }
     
@@ -140,14 +127,14 @@ struct ContentView: View {
         setupPlotDataModel(selector: 1)
         
             
-            let _ = await withTaskGroup(of:  Void.self) { taskGroup in
+        let _ = await withTaskGroup(of:  Void.self) { taskGroup in
 
 
 
                 taskGroup.addTask {
 
         //Calculate the new plotting data and place in the plotDataModel
-        await calculator.plotYEqualsX()
+        await calculator.plotCopper()
                   
         // This forces a SwiftUI update. Force a SwiftUI update.
         await self.plotData.objectWillChange.send()
@@ -155,6 +142,9 @@ struct ContentView: View {
                 }
                 
             }
+    
+        E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
+        
     }
     
     

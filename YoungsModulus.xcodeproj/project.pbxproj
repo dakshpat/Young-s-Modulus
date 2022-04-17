@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1C88D1E28036516006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D1D28036516006971CA /* Aluminium.csv */; };
-		B1C88D1F28036516006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D1D28036516006971CA /* Aluminium.csv */; };
 		B1C88D2128036552006971CA /* DataFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D2028036552006971CA /* DataFactory .swift */; };
 		B1C88D2228036552006971CA /* DataFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D2028036552006971CA /* DataFactory .swift */; };
-		B1C88D2428038213006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2328038213006971CA /* Copper706.csv */; };
-		B1C88D2528038213006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2328038213006971CA /* Copper706.csv */; };
+		B1C88D2D280CB23D006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2C280CB23D006971CA /* Copper706.csv */; };
+		B1C88D2E280CB23D006971CA /* Copper706.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2C280CB23D006971CA /* Copper706.csv */; };
+		B1C88D30280CB3A4006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2F280CB3A4006971CA /* Aluminium.csv */; };
+		B1C88D31280CB3A4006971CA /* Aluminium.csv in Resources */ = {isa = PBXBuildFile; fileRef = B1C88D2F280CB3A4006971CA /* Aluminium.csv */; };
+		B1C88D33280CB792006971CA /* Youngs modulus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D32280CB792006971CA /* Youngs modulus.swift */; };
+		B1C88D34280CB792006971CA /* Youngs modulus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D32280CB792006971CA /* Youngs modulus.swift */; };
 		D2384D8525BFC5D30082D98A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D8425BFC5D30082D98A /* Tests_iOS.swift */; };
 		D2384D9025BFC5D30082D98A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D8F25BFC5D30082D98A /* Tests_macOS.swift */; };
 		D2384D9225BFC5D30082D98A /* YoungsModulus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2384D6925BFC5D20082D98A /* YoungsModulus.swift */; };
@@ -73,9 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B1C88D1D28036516006971CA /* Aluminium.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aluminium.csv; sourceTree = "<group>"; };
 		B1C88D2028036552006971CA /* DataFactory .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFactory .swift"; sourceTree = "<group>"; };
-		B1C88D2328038213006971CA /* Copper706.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copper706.csv; sourceTree = "<group>"; };
+		B1C88D2C280CB23D006971CA /* Copper706.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copper706.csv; sourceTree = "<group>"; };
+		B1C88D2F280CB3A4006971CA /* Aluminium.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aluminium.csv; sourceTree = "<group>"; };
+		B1C88D32280CB792006971CA /* Youngs modulus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Youngs modulus.swift"; sourceTree = "<group>"; };
 		D2384D6925BFC5D20082D98A /* YoungsModulus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungsModulus.swift; sourceTree = "<group>"; };
 		D2384D6A25BFC5D20082D98A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2384D6B25BFC5D30082D98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 				D2384D6925BFC5D20082D98A /* YoungsModulus.swift */,
 				D2384D6A25BFC5D20082D98A /* ContentView.swift */,
 				D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */,
+				B1C88D32280CB792006971CA /* Youngs modulus.swift */,
 				D2384DFE25BFE4390082D98A /* PlotClass.swift */,
 				D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */,
 				D2384DAB25BFC5E60082D98A /* CorePlot.swift */,
@@ -161,8 +165,8 @@
 				D2384DAF25BFC5E60082D98A /* operators.swift */,
 				D2384DB125BFC5E60082D98A /* TextView.swift */,
 				B1C88D2028036552006971CA /* DataFactory .swift */,
-				B1C88D1D28036516006971CA /* Aluminium.csv */,
-				B1C88D2328038213006971CA /* Copper706.csv */,
+				B1C88D2F280CB3A4006971CA /* Aluminium.csv */,
+				B1C88D2C280CB23D006971CA /* Copper706.csv */,
 				D2384D6B25BFC5D30082D98A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -360,9 +364,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C88D1E28036516006971CA /* Aluminium.csv in Resources */,
+				B1C88D2D280CB23D006971CA /* Copper706.csv in Resources */,
+				B1C88D30280CB3A4006971CA /* Aluminium.csv in Resources */,
 				D2384D9625BFC5D30082D98A /* Assets.xcassets in Resources */,
-				B1C88D2428038213006971CA /* Copper706.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +374,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C88D1F28036516006971CA /* Aluminium.csv in Resources */,
+				B1C88D2E280CB23D006971CA /* Copper706.csv in Resources */,
+				B1C88D31280CB3A4006971CA /* Aluminium.csv in Resources */,
 				D2384D9725BFC5D30082D98A /* Assets.xcassets in Resources */,
-				B1C88D2528038213006971CA /* Copper706.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +408,7 @@
 				D2384DB825BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9225BFC5D30082D98A /* YoungsModulus.swift in Sources */,
 				D2384DB425BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				B1C88D33280CB792006971CA /* Youngs modulus.swift in Sources */,
 				B1C88D2128036552006971CA /* DataFactory .swift in Sources */,
 				D2384DD025BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384DFF25BFE4390082D98A /* PlotClass.swift in Sources */,
@@ -421,6 +426,7 @@
 				D2384DB925BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9325BFC5D30082D98A /* YoungsModulus.swift in Sources */,
 				D2384DB525BFC5E60082D98A /* ChangingPlotParameters.swift in Sources */,
+				B1C88D34280CB792006971CA /* Youngs modulus.swift in Sources */,
 				B1C88D2228036552006971CA /* DataFactory .swift in Sources */,
 				D2384DD125BFC5E60082D98A /* TextView.swift in Sources */,
 				D2384E0025BFE4390082D98A /* PlotClass.swift in Sources */,

@@ -15,6 +15,9 @@ class CalculatePlotData: ObservableObject {
     var theText = ""
     var data = loadCSV(from: "Aluminium")
     var data2 = loadCSV(from: "Copper706")
+   
+    @Published var stress: [Double] = [2,3,5]
+    @Published var strain: [Double] = []
     
     var yMax = 80.0
     var yMin = 0.0
@@ -47,47 +50,60 @@ class CalculatePlotData: ObservableObject {
         plotDataModel!.appendData(dataPoint: plotData)
     }
     
-    func plotYEqualsX() async
-    {
+    func plotAluminium() async {
+        yMax = 320.0
+        yMin = 0.0
+        xMax = 0.25
+        xMin = -0.01
         
         theText = "Stress/Strain"
         
-        await setThePlotParameters(color: "Red", xLabel: "stress", yLabel: "strain", title: "Aluminium")
+        await setThePlotParameters(color: "Red", xLabel: "Strain", yLabel: "Stress", title: "Aluminium")
         
         
         var plotData :[plotDataType] =  []
+        self.stress.removeAll()
+        self.strain.removeAll()
         
         for values in data{
-
-            let dataPoint: plotDataType = [.X: values.stress, .Y: values.strain]
+            
+            self.stress.append(values.stress)
+            self.strain.append(values.strain)
+            
+            let dataPoint: plotDataType = [.X: values.strain, .Y: values.stress]
             plotData.append(contentsOf: [dataPoint])
         
         }
+
 //            theText += "x = \(x), y = \(y)\n"
         
         
         await appendDataToPlot(plotData: plotData)
-     
         
         
     }
     
     
-    func ploteToTheMinusX() async {
+    func plotCopper() async {
         //set plot parameters
-        yMax = 80.0
+        yMax = 600.0
         yMin = 0.0
         xMax = 1.0
         xMin = -0.01
                 
-        await setThePlotParameters(color: "Blue", xLabel: "stress", yLabel: "strain", title: "Copper")
+        await setThePlotParameters(color: "Blue", xLabel: "Strain", yLabel: "Stress", title: "Copper")
         
         //plot data 
         var plotData :[plotDataType] =  []
+        stress.removeAll()
+        strain.removeAll()
       
         for values in data2{
-
-            let dataPoint: plotDataType = [.X: values.stress, .Y: values.strain]
+            
+            stress.append(values.stress)
+            strain.append(values.strain)
+            
+            let dataPoint: plotDataType = [.X: values.strain, .Y: values.stress]
             plotData.append(contentsOf: [dataPoint])
         
         }

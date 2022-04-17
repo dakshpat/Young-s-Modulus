@@ -39,9 +39,9 @@ func loadCSV(from csvName: String) -> [ssData] {
     rows.removeLast()
     
     for row in rows{
-        let columns = row.components(separatedBy: ", ")
-        let stress = Double(columns[0]) ?? 0
-        let strain = Double(columns[1]) ?? 0
+        let columns = row.components(separatedBy: ",")
+        let strain = Double(columns[0]) ?? 0
+        let stress = Double(columns[1]) ?? 0
         let aluminium = ssData(stress: stress, strain: strain)
         
         csvToStruct.append(aluminium)
