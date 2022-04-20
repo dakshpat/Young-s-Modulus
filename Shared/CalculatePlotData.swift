@@ -16,7 +16,7 @@ class CalculatePlotData: ObservableObject {
     var data = loadCSV(from: "Aluminium")
     var data2 = loadCSV(from: "Copper706")
    
-    @Published var stress: [Double] = [2,3,5]
+    @Published var stress: [Double] = []
     @Published var strain: [Double] = []
     
     var yMax = 80.0
@@ -79,7 +79,6 @@ class CalculatePlotData: ObservableObject {
         
         
         await appendDataToPlot(plotData: plotData)
-        
         
     }
     

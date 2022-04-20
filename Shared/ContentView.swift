@@ -18,7 +18,10 @@ struct ContentView: View {
     var data = loadCSV(from: "Aluminium")
     var data2 = loadCSV(from: "Copper706")
     
+    @State var materials = ["Aluminium", "Copper"]
+    @State var selectedMaterial = ""
     @State var E = 0.0
+    @State var forceArray = [Double]()
     
     @State var isChecked:Bool = false
     @State var tempInput = ""
@@ -27,54 +30,31 @@ struct ContentView: View {
 
     var body: some View {
         
-        VStack{
-      
+        HStack{
+            
+            VStack{
+                Text("Youngs's Modulus(GPa): \(E, specifier: "%.3f")")
+                
+                Picker("Material", selection: $selectedMaterial){
+                    ForEach(materials, id: \.self){
+                        Text($0)
+                    }
+                }
+                .onChange(of: selectedMaterial, perform: {value in Task{await self.selectMaterial(materialType: selectedMaterial)}})
+            }
+            .padding()
+            .frame(width: 300)
+            
+           
+            Divider()
+
             CorePlot(dataForPlot: $plotData.plotArray[selector].plotData, changingPlotParameters: $plotData.plotArray[selector].changingPlotParameters)
                 .setPlotPadding(left: 10)
                 .setPlotPadding(right: 10)
                 .setPlotPadding(top: 10)
                 .setPlotPadding(bottom: 10)
                 .padding()
-            
-            Divider()
-            
-        HStack{
-
-            VStack{
-                Button("Aluminium", action: {
-                    
-                    Task.init{
-                    
-                    self.selector = 0
-                    await self.calculate()
-                    }
-                    
-                }
-                )
-        
-                
-                Button("Copper", action: { Task.init{
-                    
-                    self.selector = 1
-                    
-                    await self.calculate2()
-                    
-                    
-                    }
-                }
-                )
-                .padding()
-            }
-            
-            VStack{
-                Text("Youngs's Modulus(GPa): \(E, specifier: "%.3f")")
-            }
-            
-            }
-  
-            
-            
-            
+         
         }
         
     }
@@ -82,6 +62,33 @@ struct ContentView: View {
     @MainActor func setupPlotDataModel(selector: Int){
         
         calculator.plotDataModel = self.plotData.plotArray[selector]
+    }
+    
+    func selectMaterial(materialType: String) async {
+        
+        switch materialType {
+            
+            case "Aluminium":
+            Task.init{
+            
+            self.selector = 0
+            await self.calculate()
+            }
+        
+            case "Copper":
+            
+            Task.init{
+                self.selector = 1
+                await self.calculate2()
+                }
+        
+            default:
+            Task.init{
+            
+            self.selector = 0
+            await self.calculate()
+            }
+        }
     }
     
     
@@ -113,7 +120,9 @@ struct ContentView: View {
             }
         
         E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
-        
+        forceArray.removeAll()
+        forceArray = youngsMod.getForceRequired(Stress: calculator.stress)
+
     }
     
     /// calculate
@@ -144,10 +153,9 @@ struct ContentView: View {
             }
     
         E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
-        
+        forceArray.removeAll()
+        forceArray = youngsMod.getForceRequired(Stress: calculator.stress)
     }
-    
-    
     
     
 
