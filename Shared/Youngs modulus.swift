@@ -42,6 +42,15 @@ class youngsModulus: ObservableObject {
         return forceArray
     }
     
-    
-    
+    ///Takes the strain and gets the amount the object changed its length
+    func getLengthChange(Strain: [Double]) -> [Double]{
+        var lengthArray = [Double]()
+        
+        for value in Strain{
+            lengthArray.append(value*dogBoneLength)
+        }
+        
+        return lengthArray
+    }
+
 }

@@ -15,14 +15,18 @@ struct ContentView: View {
     
     @ObservedObject var youngsMod = youngsModulus()
     @StateObject var calculator = CalculatePlotData()
+    
     var data = loadCSV(from: "Aluminium")
     var data2 = loadCSV(from: "Copper706")
     
     @State var materials = ["Aluminium", "Copper"]
     @State var selectedMaterial = ""
     @State var E = 0.0
-    @State var forceArray = [Double]()
+    @State var sliderValue: Double = 0.0
+    @State var forceArray = [1.0, 2.0]
+    @State var lengthArray = [1.0, 2.0]
     
+   
     @State var isChecked:Bool = false
     @State var tempInput = ""
     
@@ -41,9 +45,27 @@ struct ContentView: View {
                     }
                 }
                 .onChange(of: selectedMaterial, perform: {value in Task{await self.selectMaterial(materialType: selectedMaterial)}})
+                .padding()
+                
+                VStack{
+               
+                    Text("Force Applied(N): \(forceArray[Int(sliderValue)], specifier: "%.2f")")
+                            
+                        Slider(
+                            value: $sliderValue,
+                            in: 0...(Double(forceArray.count-1)),
+                            step: 1
+                        )
+                        .padding()
+                    
+                    Text("Change in Length(mm): \(lengthArray[Int(sliderValue)], specifier: "%.2f")")
+
+                    }
             }
             .padding()
             .frame(width: 300)
+            
+            
             
            
             Divider()
@@ -121,7 +143,9 @@ struct ContentView: View {
         
         E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
         forceArray.removeAll()
+        lengthArray.removeAll()
         forceArray = youngsMod.getForceRequired(Stress: calculator.stress)
+        lengthArray = youngsMod.getLengthChange(Strain: calculator.strain)
 
     }
     
@@ -154,7 +178,9 @@ struct ContentView: View {
     
         E = youngsMod.calculateYoungs(Stress: calculator.stress, Strain: calculator.strain)
         forceArray.removeAll()
+        lengthArray.removeAll()
         forceArray = youngsMod.getForceRequired(Stress: calculator.stress)
+        lengthArray = youngsMod.getLengthChange(Strain: calculator.strain)
     }
     
     
