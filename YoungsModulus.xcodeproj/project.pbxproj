@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		905AD5AE2817675400C7157A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905AD5AD2817675400C7157A /* DrawingView.swift */; };
+		905AD5AF2817675400C7157A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905AD5AD2817675400C7157A /* DrawingView.swift */; };
 		90D108C7281748A900D4EE25 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 90D108C6281748A900D4EE25 /* CorePlot */; };
 		90D108C9281748B600D4EE25 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 90D108C8281748B600D4EE25 /* CorePlot */; };
 		B1C88D2128036552006971CA /* DataFactory .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C88D2028036552006971CA /* DataFactory .swift */; };
@@ -75,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		905AD5AD2817675400C7157A /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		B1C88D2028036552006971CA /* DataFactory .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataFactory .swift"; sourceTree = "<group>"; };
 		B1C88D2C280CB23D006971CA /* Copper706.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copper706.csv; sourceTree = "<group>"; };
 		B1C88D2F280CB3A4006971CA /* Aluminium.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aluminium.csv; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 				D2384D6A25BFC5D20082D98A /* ContentView.swift */,
 				D2384DB025BFC5E60082D98A /* CalculatePlotData.swift */,
 				B1C88D32280CB792006971CA /* Youngs modulus.swift */,
+				905AD5AD2817675400C7157A /* DrawingView.swift */,
 				D2384DFE25BFE4390082D98A /* PlotClass.swift */,
 				D2384DAA25BFC5E60082D98A /* ChangingPlotParameters.swift */,
 				D2384DAB25BFC5E60082D98A /* CorePlot.swift */,
@@ -404,6 +408,7 @@
 				D2384D9425BFC5D30082D98A /* ContentView.swift in Sources */,
 				D2384DCC25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
 				D2384DC825BFC5E60082D98A /* operators.swift in Sources */,
+				905AD5AE2817675400C7157A /* DrawingView.swift in Sources */,
 				D2384DC025BFC5E60082D98A /* PlotDataClass.swift in Sources */,
 				D2384DB825BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9225BFC5D30082D98A /* YoungsModulus.swift in Sources */,
@@ -422,6 +427,7 @@
 				D2384D9525BFC5D30082D98A /* ContentView.swift in Sources */,
 				D2384DCD25BFC5E60082D98A /* CalculatePlotData.swift in Sources */,
 				D2384DC925BFC5E60082D98A /* operators.swift in Sources */,
+				905AD5AF2817675400C7157A /* DrawingView.swift in Sources */,
 				D2384DC125BFC5E60082D98A /* PlotDataClass.swift in Sources */,
 				D2384DB925BFC5E60082D98A /* CorePlot.swift in Sources */,
 				D2384D9325BFC5D30082D98A /* YoungsModulus.swift in Sources */,

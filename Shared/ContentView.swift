@@ -70,13 +70,22 @@ struct ContentView: View {
            
             Divider()
 
-            CorePlot(dataForPlot: $plotData.plotArray[selector].plotData, changingPlotParameters: $plotData.plotArray[selector].changingPlotParameters)
-                .setPlotPadding(left: 10)
-                .setPlotPadding(right: 10)
-                .setPlotPadding(top: 10)
-                .setPlotPadding(bottom: 10)
-                .padding()
-         
+            VStack{
+                CorePlot(dataForPlot: $plotData.plotArray[selector].plotData, changingPlotParameters: $plotData.plotArray[selector].changingPlotParameters)
+                    .setPlotPadding(left: 10)
+                    .setPlotPadding(right: 10)
+                    .setPlotPadding(top: 10)
+                    .setPlotPadding(bottom: 10)
+                    .padding()
+            
+            Divider()
+                
+                drawingView(deltaLength: lengthArray[Int(sliderValue)])
+                    .padding()
+                    .aspectRatio(1, contentMode: .fit)
+                    .drawingGroup()
+            
+            }
         }
         
     }
